@@ -1,0 +1,104 @@
+.protest
+{
+     font-family: 'Protest Revolution', sans-serif;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+/* *{
+     background-color: rgba(255, 0, 0, 0.151);
+} */
+.bg-back
+{
+     background:linear-gradient(rgb(255, 255, 255),#ffffff), url('../images/admin/back10.jpeg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.bg-back2
+{
+     background-image: url(../images/admin/back6.jpg) ;  background-size: cover;
+     background-repeat: no-repeat;
+}
+.blur input::placeholder,textarea::placeholder
+{
+   color:white!important;  
+}
+
+
+.imagesilder{
+    max-height: 100vh;
+    /* border-radius: 2%; */
+}
+
+/* .section{
+     height: 15.6rem;
+     width: 15.6rem;
+     margin: 0px auto;
+     border-radius: 20%;
+     overflow: hidden;
+} */
+/* .section img{
+     width: 100%;
+} */
+.scroll::-webkit-scrollbar
+{ 
+     display: none;
+}
+
+#left-side
+{
+    transition:2s ease;
+}
+#sidnavbar:checked~#left-side
+{
+left:-100%;
+}
+#sidnavbar:checked~#right-side
+{
+display:inline-block;
+width: 100%!important;
+}
+.blur2
+{
+     backdrop-filter: blur(15px);
+     background-color: rgba(0, 0, 0, 0.881);
+}
+.blur,.blur input,.blur textarea,.blur select,.blur select option
+{
+     backdrop-filter: blur(5px);
+     background-color: rgba(0, 0, 0,0.2);
+}
+.blur input:focus,.blur textarea:focus,.blur select:focus,.blur select option:focus
+{
+     backdrop-filter: blur(15px);
+     color:white;
+     background-color: rgba(133, 7, 7, 0.281);
+}
+.viewcust{
+     background-image:url('./img/back6.jpg');
+     background-size:cover; 
+     overflow:auto; 
+     height:90vh; 
+}
+.bg-blur{
+     backdrop-filter: blur(5px);
+     background-color: rgba(0, 0, 0, 0.432);
+}
+@media (max-width:391px)
+{
+     #left-side
+     {
+          width:20vw;
+     }
+     #left-side .nav-item, #left-side .nav-link
+     {
+          width: 1vw;
+     }
+     #left-side span
+     {
+          display: none;
+     }
+     #right-side
+     {
+          width:100%;
+     }
+}
